@@ -35,7 +35,7 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Channel", url="t.me/VKPROJECTS"
+                        text="📮CHANNEL", url="t.me/VKPROJECTS"
                     )
                 ]
             ]
