@@ -14,6 +14,8 @@ Hey [{}](tg://user?id={}),
 I'm A Music Bot
 Just send me the song name you want to download.
 Eg: ```/song Faded Alan Walker```
+
+Made With ❤ By @VkProjects
 """
 
 owner_help = """
@@ -34,8 +36,8 @@ async def start(client, message):
         btn = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        text="📮CHANNEL", url="t.me/VKPROJECTS"
+                    InlineKeyboardButton('⚙ CHANNEL ⚙', url='https://t.me/VKP_BOTS),
+                    InlineKeyboardButton('⚙ GROUP ⚙', url='https://t.me/VKPROJECTS'),
                     )
                 ]
             ]
