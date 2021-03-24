@@ -36,7 +36,7 @@ async def start(client, message):
         btn = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⚙ CHANNEL ⚙', url='https://t.me/VKP_BOTS),
+                    InlineKeyboardButton('⚙ CHANNEL ⚙', url='https://t.me/VKP_BOTS'),
                     InlineKeyboardButton('⚙ GROUP ⚙', url='https://t.me/VKPROJECTS'),
                     )
                 ]
