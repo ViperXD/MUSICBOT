@@ -28,8 +28,12 @@ from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 from helper_funcs.chat_base import TRChatBase
 
 
-@pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
-async def text(bot, update):
+@app.on_message(filters.create(ignore_blacklisted_users) & filters.command("start"))
+async def start(client, message):
+    chat_id = message.chat.id
+    user_id = message.from_user["id"]
+    name = message.from_user["first_name"]
+
     if update.from_user.id in Config.BANNED_USERS:
         await update.reply_text("You are Banned")
         return
